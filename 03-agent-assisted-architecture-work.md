@@ -33,11 +33,11 @@ one session, but it still creates meaningful architectural questions.
 
 Both versions must deliver the same user journey:
 
-| Monolith | Multi-service system |
-|---|---|
+| Monolith                                                                                           | Multi-service system                                                                                                                    |
+| -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | One web application contains the interface, booking logic, persistence, and confirmation behavior. | A frontend talks to a booking API; a separate notification component reacts after a booking. Each service has one clear responsibility. |
-| One local data store holds rooms, bookings, and confirmation records. | The booking API owns booking data; the notification API owns its confirmation records and must not write directly to booking data. |
-| One process is usually enough to run locally. | Multiple local processes or containers may be needed, plus a clear contract between them. |
+| One local data store holds rooms, bookings, and confirmation records.                              | The booking API owns booking data; the notification API owns its confirmation records and must not write directly to booking data.      |
+| One process is usually enough to run locally.                                                      | Multiple local processes or containers may be needed, plus a clear contract between them.                                               |
 
 The multi-service version does not need production infrastructure, authentication,
 an actual email provider, or a message broker. A local HTTP call or simple local
@@ -112,13 +112,13 @@ criteria from [templates/prototype-brief.md](templates/prototype-brief.md).
 
 Then complete this short review:
 
-| Review question | Your notes |
-|---|---|
-| Does the browser flow work from start to finish? | |
-| Is booking data still present after refresh? | |
-| Is a conflict handled clearly? | |
-| Which component owns the booking rule? | |
-| What would break first with ten times more traffic? | |
+| Review question                                     | Your notes |
+| --------------------------------------------------- | ---------- |
+| Does the browser flow work from start to finish?    |            |
+| Is booking data still present after refresh?        |            |
+| Is a conflict handled clearly?                      |            |
+| Which component owns the booking rule?              |            |
+| What would break first with ten times more traffic? |            |
 
 ## Check Your Understanding
 

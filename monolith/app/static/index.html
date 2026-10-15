@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OfficeRooms</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main>
+    <h1>OfficeRooms</h1>
+    <p class="sub">Book a meeting room. Use fake names only.</p>
+
+    <section>
+      <label>Date <input type="date" id="date"></label>
+      <h2>Rooms and time slots</h2>
+      <div id="availability"></div>
+    </section>
+
+    <section>
+      <h2>Book a room</h2>
+      <form id="booking-form">
+        <label>Name <input type="text" id="name" required></label>
+        <label>Room <select id="room"></select></label>
+        <label>Time <select id="time"></select></label>
+        <button type="submit">Book</button>
+      </form>
+      <div id="message" role="status"></div>
+    </section>
+
+    <section>
+      <h2>Bookings on this date</h2>
+      <ul id="bookings"></ul>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

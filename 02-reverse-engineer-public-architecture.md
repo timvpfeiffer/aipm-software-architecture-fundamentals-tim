@@ -22,43 +22,43 @@ a reasoned public hypothesis:
 
 Use at least three sources. Prefer primary sources when available.
 
-| Source type | What it can reveal | Reliability |
-|---|---|---|
-| Engineering blog | Architecture evolution, scaling problems, incidents, data platforms, reliability work. | High when written by the company. |
-| Public documentation | APIs, integrations, data model concepts, platform boundaries. | High for current public surfaces. |
-| Open-source repositories | Languages, frameworks, modules, contribution patterns. | High for open components, incomplete for private systems. |
-| Job descriptions | Technology keywords, team boundaries, current hiring priorities. | Medium; may be aspirational or broad. |
-| Conference talks | Architecture decisions, migration stories, operating model. | Medium to high, depending on date. |
-| Third-party articles | Context and summaries. | Medium to low unless they cite primary sources. |
+| Source type              | What it can reveal                                                                     | Reliability                                               |
+| ------------------------ | -------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| Engineering blog         | Architecture evolution, scaling problems, incidents, data platforms, reliability work. | High when written by the company.                         |
+| Public documentation     | APIs, integrations, data model concepts, platform boundaries.                          | High for current public surfaces.                         |
+| Open-source repositories | Languages, frameworks, modules, contribution patterns.                                 | High for open components, incomplete for private systems. |
+| Job descriptions         | Technology keywords, team boundaries, current hiring priorities.                       | Medium; may be aspirational or broad.                     |
+| Conference talks         | Architecture decisions, migration stories, operating model.                            | Medium to high, depending on date.                        |
+| Third-party articles     | Context and summaries.                                                                 | Medium to low unless they cite primary sources.           |
 
 ## Suggested Companies
 
 Pick one company from the table or choose another company with enough public
 technical material.
 
-| Company | Product type | Useful starting point |
-|---|---|---|
-| GitLab | SaaS development platform | [GitLab Engineering Handbook](https://handbook.gitlab.com/handbook/engineering/) |
-| Slack | Collaboration SaaS | [Slack Engineering](https://slack.engineering/) |
-| Shopify | Commerce platform | [Shopify Engineering](https://shopify.engineering/) |
-| Airbnb | Marketplace | [Airbnb Tech Blog](https://airbnb.tech/) |
-| Spotify | Streaming and media | [Spotify Engineering](https://engineering.atspotify.com/) |
-| Netflix | Media platform | [Netflix Technology Blog](https://netflixtechblog.com/) |
-| Stripe | Fintech and APIs | [Stripe Engineering](https://stripe.com/blog/engineering) |
-| Figma | Collaboration design tool | [Figma Engineering](https://www.figma.com/blog/engineering/) |
-| LinkedIn | Social and B2B platform | [LinkedIn Engineering](https://engineering.linkedin.com/) |
+| Company  | Product type              | Useful starting point                                                           |
+| -------- | ------------------------- | ------------------------------------------------------------------------------- |
+| GitLab   | SaaS development platform | [GitLab Engineering Handbook](https://handbook.gitlab.com/handbook/engineering/) |
+| Slack    | Collaboration SaaS        | [Slack Engineering](https://slack.engineering/)                                  |
+| Shopify  | Commerce platform         | [Shopify Engineering](https://shopify.engineering/)                              |
+| Airbnb   | Marketplace               | [Airbnb Tech Blog](https://airbnb.tech/)                                         |
+| Spotify  | Streaming and media       | [Spotify Engineering](https://engineering.atspotify.com/)                        |
+| Netflix  | Media platform            | [Netflix Technology Blog](https://netflixtechblog.com/)                          |
+| Stripe   | Fintech and APIs          | [Stripe Engineering](https://stripe.com/blog/engineering)                        |
+| Figma    | Collaboration design tool | [Figma Engineering](https://www.figma.com/blog/engineering/)                     |
+| LinkedIn | Social and B2B platform   | [LinkedIn Engineering](https://engineering.linkedin.com/)                        |
 
 ## Evidence Matrix
 
 Use this matrix while researching.
 
-| Question | Evidence to collect | PM interpretation |
-|---|---|---|
-| What is the core product experience? | Product pages, docs, API docs, user workflows. | Which user outcomes must the architecture protect? |
-| What are the main components? | Blog posts, diagrams, docs, repositories. | Which teams or services may become dependencies? |
-| What data is created and where does it flow? | Event posts, analytics posts, API docs, data platform notes. | Which metrics, privacy risks, or AI opportunities exist? |
-| What architecture style is likely? | Mentions of monolith, services, events, queues, functions, data pipelines. | What trade-offs affect delivery and reliability? |
-| What quality attributes matter most? | Reliability posts, incident posts, scale posts, compliance docs. | What should be in acceptance criteria and launch plans? |
+| Question                                     | Evidence to collect                                                        | PM interpretation                                        |
+| -------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------- |
+| What is the core product experience?         | Product pages, docs, API docs, user workflows.                             | Which user outcomes must the architecture protect?       |
+| What are the main components?                | Blog posts, diagrams, docs, repositories.                                  | Which teams or services may become dependencies?         |
+| What data is created and where does it flow? | Event posts, analytics posts, API docs, data platform notes.               | Which metrics, privacy risks, or AI opportunities exist? |
+| What architecture style is likely?           | Mentions of monolith, services, events, queues, functions, data pipelines. | What trade-offs affect delivery and reliability?         |
+| What quality attributes matter most?         | Reliability posts, incident posts, scale posts, compliance docs.           | What should be in acceptance criteria and launch plans?  |
 
 ## Responsible Inference
 
